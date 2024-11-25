@@ -41,7 +41,7 @@ public class Enemy extends DynamicSprite{
         return damage;
     }
 
-    // Vérifie si l'ennemi peut infliger des dégâts (cooldown terminé)
+    // Vérifie si l'ennemi peut infliger des dégâts
     public boolean canAttack() {
         long currentTime = System.currentTimeMillis();
         return currentTime - lastDamageTime >= attackCooldown;

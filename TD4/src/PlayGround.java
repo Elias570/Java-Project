@@ -39,8 +39,8 @@ public class PlayGround {
                         case 'R' : environment.add(new SolidSprite(columnNumber*imageRockWidth,
                                 lineNumber*imageRockHeight, imageRock, imageRockWidth, imageRockHeight));
                             break;
-                        case 't' : environment.add(new SolidSprite(columnNumber*imageTrapWidth,
-                                lineNumber*imageTrapHeight, imageTrap, imageTrapWidth, imageTrapHeight));
+                        case 't' : environment.add(new Trap(columnNumber*imageTrapWidth,
+                                lineNumber*imageTrapHeight, imageTrap, imageTrapWidth, imageTrapHeight,10));
                             break;
                     }
                     //System.out.println("Added : "+element);
